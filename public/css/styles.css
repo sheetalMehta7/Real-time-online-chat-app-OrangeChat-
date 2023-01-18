@@ -1,0 +1,229 @@
+:root {
+    --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --msger-bg: #fff;
+    --border: 2px solid #ddd;
+    --right-msg-bg: #579ffb;
+    --header-text: #272830;
+    --total-user-text: #534646;
+    --msger-background: white;
+    --msg-left: #FFBD59;
+}
+
+/* **********Dark Theme Variables********* */
+.dark-theme-variables {
+    --body-bg: linear-gradient(135deg, #000000 0%, #282a2e 100%);
+    --msger-bg: rgb(91, 89, 89);
+    --header-text: #fff;
+    --msger-background: rgb(78, 76, 76);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    display: block;
+    height: 100vh;
+    background-image: var(--body-bg);
+    font-family: Helvetica, sans-serif;
+}
+
+.welcome-msg {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: Helvetica, sans-serif;
+    color: var(--header-text);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.logo {
+    width: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    margin-left: 0.7rem;
+}
+
+.msger {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto 5px;
+    height: calc(100% - 130px);
+    border: var(--border);
+    border-radius: 5px;
+    background: var(--msger-bg);
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.msger-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: var(--border);
+    background: #eee;
+    color: rgb(16, 15, 15);
+    font-weight: 700;
+}
+
+.total-users {
+    font-size: 0.8rem;
+    color: var(--total-user-text);
+    font-weight: 100;
+    padding-left: 1.5rem;
+}
+
+/* Theme toggler */
+.theme-toggler {
+    background: #2196F3;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggler span.active {
+    background: #FFBD59;
+    color: white;
+    border-radius: 5px;
+}
+
+.fill-icon {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* Main message box */
+
+.msger-chat {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: var(--msger-background);
+}
+
+.msger-chat::-webkit-scrollbar {
+    width: 6px;
+}
+
+.msger-chat::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+.msger-chat::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+}
+
+.msg {
+    display: flex;
+    align-items: flex-end;
+    margin: 3px 5px 10px;
+}
+
+.msg:last-of-type {
+    margin: 0;
+}
+
+
+.msg-bubble {
+    max-width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    background: var(--msg-left);
+    color: white;
+}
+
+.msg-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.msg-info-name {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.msg-info-time {
+    font-size: 0.85em;
+}
+
+.left-msg .msg-bubble {
+    border-bottom-left-radius: 0;
+}
+
+.right-msg {
+    flex-direction: row-reverse;
+}
+
+.right-msg .msg-bubble {
+    background: var(--right-msg-bg);
+    color: #fff;
+    border-bottom-right-radius: 0;
+}
+
+.right-msg .msg-img {
+    margin: 0 0 0 10px;
+}
+
+.msger-inputarea {
+    display: flex;
+    padding: 10px;
+    border-top: var(--border);
+    background: #eee;
+}
+
+.msger-inputarea * {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+#msger-input {
+    flex: 1;
+    background: #ddd;
+}
+
+.msger-send-btn {
+    margin-left: 10px;
+    background: rgb(5, 220, 77);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.23s;
+}
+
+.msger-send-btn:hover {
+    background: rgb(2, 189, 55);
+}
