@@ -28,3 +28,9 @@
 * run node index.js
 * The above line of code will create a portal 3000.
 * Go to browser write localhost:3000 to view your live site.
+
+## Site images
+
+![](https://github.com/sheetalMehta7/Real-time-online-chat-app-OrangeChat-/blob/main/public/images/first.jpg)
+![](https://github.com/sheetalMehta7/Real-time-online-chat-app-OrangeChat-/blob/main/public/images/user1.jpg)
+![](https://github.com/sheetalMehta7/Real-time-online-chat-app-OrangeChat-/blob/main/public/images/user2.jpg)
