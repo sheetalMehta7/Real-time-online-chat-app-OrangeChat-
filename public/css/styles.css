@@ -73,7 +73,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     border-bottom: var(--border);
     background: #eee;
     color: rgb(16, 15, 15);
@@ -233,8 +233,8 @@ body {
     /* For mobile phones: */
     .welcome-msg h1 {
         font-size: 1rem;
-        padding-right: 2rem;
-        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-left: 0.5rem;
     }
     .logo {
         width: 2.3rem;
