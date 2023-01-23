@@ -227,3 +227,16 @@ body {
 .msger-send-btn:hover {
     background: rgb(2, 189, 55);
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .welcome-msg {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    .logo {
+        width: 2rem;
+        text-align: center;
+    }
+
+  }
