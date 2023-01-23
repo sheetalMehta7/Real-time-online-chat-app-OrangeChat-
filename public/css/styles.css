@@ -73,6 +73,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    border-radius: 5px;
     border-bottom: var(--border);
     background: #eee;
     color: rgb(16, 15, 15);
@@ -230,13 +231,13 @@ body {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .welcome-msg {
-        font-size: 0.6rem;
-        text-align: center;
+    .welcome-msg h1 {
+        font-size: 1rem;
+        padding-right: 2rem;
+        padding-left: 1rem;
     }
     .logo {
-        width: 2rem;
-        text-align: center;
+        width: 2.3rem;
     }
 
   }
