@@ -73,7 +73,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 4px;
     border-bottom: var(--border);
     background: #eee;
     color: rgb(16, 15, 15);
